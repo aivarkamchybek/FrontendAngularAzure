@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Create New Quote</h2>
+
+<mat-dialog-content>
+  <div *ngIf="isLoading" class="loading-overlay">
+    <mat-spinner></mat-spinner> Creating quote...
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+  <mat-form-field>
+    <mat-label>Author</mat-label>
+    <input matInput [(ngModel)]="newQuote.author" required [disabled]="isLoading" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Content</mat-label>
+    <textarea matInput [(ngModel)]="newQuote.content" required [disabled]="isLoading"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>User Email</mat-label>
+    <input matInput [(ngModel)]="newQuote.userEmail" [disabled]="isLoading" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="cancel()" [disabled]="isLoading">Cancel</button>
+  <button mat-button color="primary" (click)="createQuote()" [disabled]="isLoading">Create Quote</button>
+</mat-dialog-actions>

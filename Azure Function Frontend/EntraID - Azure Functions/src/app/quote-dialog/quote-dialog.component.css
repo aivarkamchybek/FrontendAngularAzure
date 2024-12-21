@@ -1,0 +1,109 @@
+
+h2.mat-dialog-title {
+    font-size: 1.25rem; 
+    font-weight: 500;
+    color: #333; 
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+
+  .error-message {
+    color: #e53935; 
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+ 
+  mat-form-field {
+    width: 100%; 
+    margin-bottom: 12px; 
+  }
+  
+  
+  mat-label {
+    font-size: 1rem;
+    color: #555; 
+  }
+  
+  input.mat-input, textarea.mat-input-element {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input.mat-input:focus, textarea.mat-input-element:focus {
+    border-color: #1976d2; 
+    outline: none;
+  }
+  
+  
+  textarea.mat-input-element {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+
+  mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  
+  button.mat-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase; 
+    transition: background-color 0.2s ease;
+    min-width: 100px;
+  }
+  
+  button.mat-button:first-child {
+    background-color: #f44336; 
+    color: white;
+  }
+  
+  button.mat-button:first-child:hover {
+    background-color: #d32f2f; 
+  }
+  
+  button.mat-button:nth-child(2) {
+    background-color: #1976d2; 
+    color: white;
+  }
+  
+  button.mat-button:nth-child(2):hover {
+    background-color: #1565c0; 
+  }
+  
+
+  
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    pointer-events: all; 
+  }
+  
+
+  .mat-spinner {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  

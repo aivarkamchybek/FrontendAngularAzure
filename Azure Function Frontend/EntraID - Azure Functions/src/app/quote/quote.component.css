@@ -1,0 +1,277 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Loading Indicator */
+.mat-body-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #555;
+  padding: 10px;
+}
+
+.mat-spinner {
+  margin-right: 10px;
+}
+
+/* Error Message */
+.alert {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  color: #721c24;
+}
+
+.alert .mat-icon {
+  margin-right: 10px;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mat-form-field {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Table Styles */
+mat-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+mat-header-cell, mat-cell {
+  padding: 16px;
+  text-align: left;
+}
+
+mat-header-cell {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+mat-row:hover {
+  background-color: #f5f5f5;
+}
+
+mat-header-row {
+  background-color: #e0e0e0;
+}
+
+button.mat-icon-button {
+  margin-right: 5px;
+}
+
+/* Modal */
+.mat-dialog-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-form-field {
+  margin-bottom: 15px;
+}
+
+.mat-dialog-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-dialog-actions button {
+  width: 48%;
+}
+
+.mat-dialog-content h4 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Button Styling */
+button.mat-icon-button {
+  transition: background-color 0.3s ease;
+}
+
+button.mat-icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button.mat-button {
+  transition: background-color 0.3s ease;
+}
+
+button.mat-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mat-form-field {
+    width: 100%;
+  }
+
+  .search-bar {
+    padding: 0 10px;
+  }
+
+  mat-table {
+    font-size: 0.9rem;
+  }
+
+  .mat-dialog-content h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mat-form-field {
+    width: 100%;
+  }
+
+  button.mat-icon-button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .alert {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+
+button.mat-icon-button {
+    background-color: #1976d2; /* Primary color */
+    color: white; /* Icon color */
+    padding: 10px;
+    border-radius: 50%; /* Circular button */
+    width: 38px; /* Fixed width for the button */
+    height: 38px; /* Fixed height for the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end; /* Aligns child elements to the right */
+    align-items: center; /* Centers the button vertically */
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  /* Form Field Styling */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px; /* Slight space between fields */
+  }
+  
+  /* Label Styling */
+  mat-label {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Input and Textarea Styling */
+  input.mat-input, textarea.mat-input-element {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input.mat-input:focus, textarea.mat-input-element:focus {
+    border-color: #1976d2; /* Focused color */
+    outline: none;
+  }
+  
+  /* Textarea Specific */
+  textarea.mat-input-element {
+    resize: vertical; /* Vertical resizing only */
+    min-height: 100px;
+  }
+  
+  /* Dialog Actions */
+  mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Buttons Styling */
+  button.mat-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    min-width: 100px;
+  }
+  
+  button.mat-button:first-child {
+    background-color: #f44336; /* Red for cancel */
+    color: white;
+  }
+  
+  button.mat-button:first-child:hover {
+    background-color: #d32f2f; /* Darker red */
+  }
+  
+  button.mat-button:nth-child(2) {
+    background-color: #1976d2; /* Primary blue for save */
+    color: white;
+  }
+  
+  button.mat-button:nth-child(2):hover {
+    background-color: #1565c0; /* Darker blue */
+  }
+
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Make sure it’s above everything else */
+    pointer-events: all; /* Make sure it blocks user interactions */
+  }
+  
+  /* Spinner */
+  .mat-spinner {
+    margin: 0 10px;
+    display: inline-block;
+  }
